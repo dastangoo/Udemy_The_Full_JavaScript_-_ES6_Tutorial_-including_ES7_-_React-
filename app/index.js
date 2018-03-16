@@ -1,23 +1,9 @@
-// let limit = 100;
-// var limit = 100;
-// const limit = 100;
-// {
-  // let limit = 10;
-  // var limit = 10;
-//   const limit = 10;
-//   console.log('backstage limit', limit);
-// }
-// console.log('overall venue limit', limit);
+let a = `good`;
+// let greeting = a + " morning";
+let greeting = `${a} morning`;
+// console.log(a);
 
-function hello() {
-  let message = "Hello";
-  console.log(message);
-}
-
-function greeting() {
-  let message = "How are you?"
-  console.log(message);
-}
-
-hello();
-greeting();
+let b = 'birthday';
+let c = `Happy ${b}`
+// console.log(greeting);
+console.log(c);
