@@ -1,7 +1,7 @@
 module.exports = {
   entry: ['./app/index.js'],
   output: {
-    path: '/Applications/MAMP/htdocs/javascript/build',
+    path: __dirname + '/build',
     filename: 'bundle.js'
   }
 }
