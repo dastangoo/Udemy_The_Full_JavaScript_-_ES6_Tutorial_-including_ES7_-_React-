@@ -1,13 +1,22 @@
-class Calculator {
-  static multiply(a, b) {
-    return a * b;
-  }
+function Wizard(name, house, pet) {
+  this.name = name;
+  this.house = house;
+  this.pet = pet;
   
-  static add(a, b) {
-    return a + b;
-  }
+  // this.greet = () => {
+  //   return `I'm ${this.name} from ${this.house}`;
+  // };
+  
+  this.greet = () => `I'm ${this.name} from ${this.house}`;
 }
 
-// let a = Calculator.multiply(4, 5)
-let a = Calculator.add(4, 5)
-console.log(a);
+Wizard.prototype.pet_name;
+Wizard.prototype.info = function() {
+   return `I have a ${this.pet} named ${this.pet_name}.`;
+};
+
+let harry = new Wizard("Harry Potter", "Gryffindor", "Owl");
+harry.pet_name = "Hedwig";
+// console.log(harry);
+// console.log(harry.greet());
+console.log(harry.info());
