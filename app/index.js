@@ -1,15 +1,23 @@
 // let limit = 100;
+// var limit = 100;
 // const limit = 100;
-// limit += 100;
-// limit = 200;
-// console.log(limit);
+// {
+  // let limit = 10;
+  // var limit = 10;
+//   const limit = 10;
+//   console.log('backstage limit', limit);
+// }
+// console.log('overall venue limit', limit);
 
-const emails = [
-  'frodo@email.com',
-  'samwise@email.com',
-  'merry@email.com'
-];
-// emails = [];
-emails.push('pippin@email.com');
+function hello() {
+  let message = "Hello";
+  console.log(message);
+}
 
-console.log(emails);
+function greeting() {
+  let message = "How are you?"
+  console.log(message);
+}
+
+hello();
+greeting();
