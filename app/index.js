@@ -1,7 +1,7 @@
-const addToCart = (item, number) => {
-  // return Number.isFinite(number);
-  return Number.isSafeInteger(number);
-};
-
-// console.log(addToCart('shirt', 5));
-console.log(addToCart('shirt', Math.pow(2, 54)));
+// import { fellowship, total } from './fellowship';
+// console.log(fellowship);
+// console.log(total);
+// import { add, multiply } from './math';
+import multiply from './math';
+// console.log(add(5, 10));
+console.log(multiply(5, 10));
