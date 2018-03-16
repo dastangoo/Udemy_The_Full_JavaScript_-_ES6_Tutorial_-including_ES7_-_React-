@@ -1,9 +1,15 @@
-let a = `good`;
-// let greeting = a + " morning";
-let greeting = `${a} morning`;
-// console.log(a);
+// let a = [20, 30, 40];
+// let b = [10, 50];
+// let b = [10, ...a, 50];
+// console.log(b);
 
-let b = 'birthday';
-let c = `Happy ${b}`
-// console.log(greeting);
-console.log(c);
+// let a = ['Dana', 'Erik', 'Frank'];
+// let b = ['Alice', 'Bob', 'Carl', ...a];
+// console.log(b);
+
+function collect(...a) {
+  console.log(a);
+}
+
+// collect(1, 2, 3, 4, 5);
+collect(3, 6, 9, 12, 15);
