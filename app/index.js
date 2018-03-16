@@ -1,20 +1,21 @@
-// function cheer() {
-//   console.log("Woohoo!");
-// }
+let values = [20, 30, 40];
 
-// var cheer = function() {
-//   console.log("Woohoo!");
-// }
+// let double = (n) => {
+//   return n * 2;
+// };
 
-// setTimeout(() => {
-//   console.log("Woohoo!");
-// }, 3000);
-// setInterval(function() {
-//   console.log("Woohoo!");
-// }, 3000);
+// let double = n => n * 2;
+// 
+// let doubled = values.map(double);
+// let doubled = values.map((n) => {
+//   return n * 2;
+// });
+// let doubled = values.map((n) => n * 2);
+// console.log(doubled);
 
-let cheer = () => {
-  console.log("Woohoo!");
-};
-
-cheer();
+let points = [7, 16, 21, 4, 3, 22, 5];
+// let highScores = points.filter((n) => {
+//   return n > 15;
+// });
+let highScores = points.filter((n) => n > 15);
+console.log(highScores);
