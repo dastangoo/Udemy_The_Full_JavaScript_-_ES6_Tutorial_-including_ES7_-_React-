@@ -1,0 +1,11 @@
+var points = [25, 16,7, 9, 31];
+// points.push(8);
+// var last = points.pop();
+// var first = points[0];
+var a = points.shift();
+points.unshift(25);
+console.log(points);
+// console.log(last);
+// console.log(points, first, last);
+// console.log(points.length);
+console.log(a);
