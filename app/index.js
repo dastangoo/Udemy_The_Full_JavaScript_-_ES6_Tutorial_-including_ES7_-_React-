@@ -1,22 +1,25 @@
-function Wizard(name, house, pet) {
-  this.name = name;
-  this.house = house;
-  this.pet = pet;
-  
-  // this.greet = () => {
-  //   return `I'm ${this.name} from ${this.house}`;
-  // };
-  
-  this.greet = () => `I'm ${this.name} from ${this.house}`;
-}
+// let a = new Set();
+// a.add(5);
+// a.add(43);
+// a.add("Woohoo");
+// a.add({x: 50, y: 200});
+// console.log(a);
+// console.log(a.size);
+// console.log(a.has(5));
+// console.log(a.has(7));
 
-Wizard.prototype.pet_name;
-Wizard.prototype.info = function() {
-   return `I have a ${this.pet} named ${this.pet_name}.`;
-};
+// let numbers = [5, 7, 8, 13, 17, 17];
+// let numSet = new Set(numbers);
+// console.log(numbers);
+// console.log(numSet);
+// 
+// for (let element of numSet.values()) {
+//   console.log(element);
+// }
 
-let harry = new Wizard("Harry Potter", "Gryffindor", "Owl");
-harry.pet_name = "Hedwig";
-// console.log(harry);
-// console.log(harry.greet());
-console.log(harry.info());
+let chars = "jlsjflsdjflsjflsjfdlsjfdlsjfsdlfjlsjfd";
+let chars_arr = chars.split("");
+let chars_set = new Set(chars_arr);
+console.log(chars);
+console.log(chars_arr);
+console.log(chars_set);
