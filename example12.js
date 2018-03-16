@@ -1,0 +1,10 @@
+// var a = true;
+// var a = false;
+// var a = 5 == 5;
+// var a = 5 == 7;
+// var a = 5 < 7;
+// var a = 5 <= 7;
+var a = 5 > 7;
+var a = 5 >= 7;
+// console.log(typeof a);
+console.log(a);
