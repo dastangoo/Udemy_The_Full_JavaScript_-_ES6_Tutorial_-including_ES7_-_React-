@@ -1,30 +1,9 @@
-// let values = [20, 30, 40];
-// var values = [20, 30, 40];
+// let b = "wooh" + "oo".repeat(50);
+// let b = "wooh" + " ".repeat(50) + "oo";
+// let b = `wooh${"oo".repeat(50)}`;
+// console.log(b);
 
-// let double = (n) => {
-//   return n * 2;
-// };
-
-// let double = n => n * 2;
-// 
-// let doubled = values.map(double);
-// let doubled = values.map((n) => {
-//   return n * 2;
-// });
-// let doubled = values.map((n) => n * 2);
-// var doubled = values.map(function(n) {
-//   return n * 2;
-// })
-// console.log(doubled);
-
-let points = [7, 16, 21, 4, 3, 22, 5];
-// var points = [7, 16, 21, 4, 3, 22, 5];
-// let highScores = points.filter((n) => {
-//   return n > 15;
-// });
-let highScores = points.filter((n) => n > 15);
-// var highScores = points.filter(function(n) {
-//   return n > 15;
-// });
-console.log(highScores);
-
+console.log("butterfly".startsWith("butter"));
+console.log("butterfly".endsWith("fly"));
+console.log("butterfly".includes("fly"));
+console.log("butterfly".includes("caterpillar"));
