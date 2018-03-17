@@ -1,9 +1,7 @@
-let p = new Promise((resolve, reject) => {
-  // resolve('Resolved promise data');
-  // reject('Rejected promise data');
-  setTimeout(() => resolve('Resolved promise data'), 3000);
-});
-// console.log('after promise consumption');
-p.then(response => console.log(response))
-  .catch(error => console.log(error));
-console.log('after promise consumption');
+// const root = 'https://jsonplaceholder.typicode.com/posts/1';
+const root = 'https://www.googleapis.com/books/v1/volumes?q=isbn:0133103633';
+
+fetch(root, { method: "GET" })
+  // .then(response => console.log(response));
+  .then(response => response.json())
+  .then(json => console.log(json));
