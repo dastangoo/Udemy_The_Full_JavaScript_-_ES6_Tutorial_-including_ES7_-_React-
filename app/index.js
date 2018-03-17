@@ -1,23 +1,18 @@
-// function* letterMaker() {
-//   yield 'a';
-//   yield 'b';
-//   yield 'c';
-// }
-// let letterGen = letterMaker();
-// console.log(letterGen.next().value);
-// console.log(letterGen.next().value);
-// console.log(letterGen.next().value);
-// console.log(letterGen.next().value);
-
-function* countMaker() {
+function* evens() {
   let count = 0;
-  while (count < 4) {
-    yield count += 1;
-  }
+   while (true) {
+     count += 2;
+     // yield count;
+     let reset = yield count;
+     if (reset) {
+       count = 0;
+     }
+   }
 }
 
-let countGen = countMaker();
-console.log(countGen.next().value);
-console.log(countGen.next().value);
-console.log(countGen.next().value);
-console.log(countGen.next().value);
+let sequence = evens();
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next(true).value);
+console.log(sequence.next().value);
