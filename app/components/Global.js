@@ -15,7 +15,7 @@ class Global extends Component {
   render() {
     return (
       // <div>The Global App Component</div>
-      <div>
+      <div className="Global">
         <h2>Book Explorer!</h2>
         <FormGroup>
           <InputGroup>
