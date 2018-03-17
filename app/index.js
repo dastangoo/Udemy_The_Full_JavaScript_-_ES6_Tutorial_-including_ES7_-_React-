@@ -1,7 +1,15 @@
-// const root = 'https://jsonplaceholder.typicode.com/posts/1';
-const root = 'https://www.googleapis.com/books/v1/volumes?q=isbn:0133103633';
+// In ES6
+// let a = Math.pow(2, 5);
 
-fetch(root, { method: "GET" })
-  // .then(response => console.log(response));
-  .then(response => response.json())
-  .then(json => console.log(json));
+// In ES7
+// let a = 2**5;
+// console.log(a);
+
+// In ES6
+// let b = "wonderful".includes("wonder");
+// console.log(b);
+
+// In ES7
+let b = [2, 3, 4, 5, 6].includes(4);
+console.log(b);
+
